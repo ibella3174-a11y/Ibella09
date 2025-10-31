@@ -192,6 +192,12 @@
       <i class="fa-solid fa-copy"></i>
     </div>
 
+    <div class="copy-box" onclick="copyText('bankName')">
+  <span><strong>Bank Name:</strong> <span id="bankName">Kuda</span></span>
+  <i class="fa-solid fa-copy"></i>
+    </div>
+    
+
 <div id="timer-section" style="text-align:center;margin-top:20px;">
   <p style="color:#ff6666;font-weight:600;">
     Time left to use this account: <span id="timeLeft">3600</span>s
@@ -270,7 +276,8 @@ function loadSecondAccount() {
   // Example of switching to another account
   document.getElementById("accountNumber").textContent = "3002965252";
   document.getElementById("accountName").textContent = "MAGNUS S. VENTURES";
-  
+  document.getElementById("bankName").textContent = "Kuda"; // ✅ added
+    
   // Optional: reset timer
   timeLeft = 3600;
   timerDisplay.textContent = timeLeft;
